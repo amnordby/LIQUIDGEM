@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    background-color: #ebebeb;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+header .logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2%;
+    flex-wrap: nowrap;
+}
+header .logo i{
+    color: red;
+    padding-right: 5px;
+    font-size: 20px;
+}
+header .logo h2{
+    font-style: italic;
+    font-size: 22px;
+}
+header .header-list ul{
+    display: flex;
+}
+header .header-list ul li{
+    padding-right: 10%;
+    list-style: none;
+}
+header .header-list ul li a{
+    text-decoration: none;
+    color: black;
+}
+header .header-list ul li a:hover{
+    color: #f55d5d;
+}
+.section-break{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2%;
+}
+.sec-intro{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+}
+.sec-intro h1 span{
+    color: red;
+}
+.sec-intro h1{
+    padding-bottom: 10px;
+}
+.landscape-photo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+.landscape-photo img{
+    border-radius: 15px;
+    max-width: 95%;
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+.about-me{
+    display: flex;
+    justify-content: center;
+}
+.about-me div h2{
+    text-align: center;
+    padding: 20px 0;
+    font-style: italic;
+    color: red;
+}  
+.about-left, .about-right{
+    padding: 20px 15px;
+}
+.about-me div p{
+    line-height: 20px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.card{
+    flex: 0 1 18%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    background-color: white;
+    padding: 0px 0 20px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 8px;
+}
+.card h2{
+    background-color: #fff;
+}
+.card img{
+    border: 0;
+    max-width: 100%;
+    height: 150px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #544d4d;
+    padding: 20px 0;
+}
+.quote{
+    text-align: center;
+    padding: 25px 0;
+}
+footer form{
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+    background-color:#544d4d;
+}
+footer form h3{
+    background-color: #544d4d;
+    color: red;
+    font-style: italic;
+}
+footer form button{
+    background-color: #544d4d;
+    width: 100px;
+    color: #fff;
+    border: 0;
+    font-size: .8em;
+}
+footer form button:hover{
+    cursor: pointer;
+}
+footer form input{
+    border-radius: 5px;
+    margin: 5px 0;
+    font-size: .9em;
+}
+footer form textarea{
+    font-size: .9em;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.social-icons{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    background-color: #544d4d;
+}
+.social-icons i{
+    font-size: 2em;
+    padding: 4px;
+    margin-right: 5%;
+    border-radius: 50%;
+    text-align: center;
+    color:#544d4d;
+    background-color: red;
+}
+
