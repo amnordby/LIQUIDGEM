@@ -20,9 +20,9 @@ header .logo i{
     padding-right: 5px;
     font-size: 20px;
 }
-header .logo h2{
+header .logo h3{
     font-style: italic;
-    font-size: 22px;
+    font-size: 1.5em;
 }
 header .header-list ul{
     display: flex;
@@ -56,6 +56,7 @@ header .header-list ul li a:hover{
 }
 .sec-intro h1{
     padding-bottom: 10px;
+    text-align: center;
 }
 .landscape-photo{
     width: 100%;
@@ -90,6 +91,7 @@ header .header-list ul li a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     padding: 0 5%;
 }
 .card{
@@ -104,12 +106,20 @@ header .header-list ul li a:hover{
     border-radius: 8px;
 }
 .card h2{
-    background-color: #fff;
+    background-color: inherit;
+    text-align: center;
+    font-size: 1.5em;
+}
+.card p{
+    background-color: inherit;
+    text-align: center;
+    font-size: .7em;
+    color: red;
 }
 .card img{
     border: 0;
     max-width: 100%;
-    height: 150px;
+    height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -121,6 +131,8 @@ footer{
 }
 .quote{
     text-align: center;
+    font-style: oblique;
+    color: red;
     padding: 25px 0;
 }
 footer form{
@@ -128,6 +140,8 @@ footer form{
     flex-direction: column;
     flex-grow:1;
     background-color:#544d4d;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 footer form h3{
     background-color: #544d4d;
@@ -162,13 +176,109 @@ footer form textarea{
     color: #fff;
     background-color: #544d4d;
 }
-.social-icons i{
-    font-size: 2em;
-    padding: 4px;
+.social-icons a{
+    background-color: inherit;
     margin-right: 5%;
+}
+
+.social-icons a i{
+    font-size: 1em;
+    padding: 3px;
     border-radius: 50%;
     text-align: center;
     color:#544d4d;
     background-color: red;
+    cursor: pointer;
 }
-
+.social-icons a i:hover{
+    background-color: #f76f6f;
+}
+@media (max-width: 1150px)
+{
+    .card h2{
+        font-size: 1.2em;
+    }
+}
+@media (max-width: 950px)
+{
+    .card h2{
+        font-size: 1em;
+    }
+    .card p{
+        font-size: .6em;
+    }
+}
+@media (max-width: 775px)
+{
+    .card h2{
+        font-size: .8em;
+    }
+    .card p{
+        font-size: .4em;
+    }
+}
+@media (max-width: 775px)
+{
+    .card h2{
+        font-size: .7em;
+    }
+    .card p{
+        font-size: .2em;
+    }
+    .card{
+        flex: 0 1 23%;
+    }
+}
+@media (max-width: 570px){
+    h1{
+        font-size: 1.5em;
+    }
+    a, p{
+        font-size: .8em;
+    }
+    header .logo h3, h3{
+        font-size: 1em;
+    }
+    .card h2{
+        font-size: .8em;
+    }
+    .card p{
+        font-size: .4em;
+    }
+    .card{
+        flex: 0 1 30%;
+    }
+}
+@media (max-width: 440px)
+{
+    h1{
+        font-size: 1em;
+    }
+    a, p{
+        font-size: .6em;
+    }
+    header .logo h3, h3{
+        font-size: .8em;
+    }
+    .card h2{
+        font-size: .8em;
+    }
+    .card p{
+        font-size: .5em;
+    }
+    .card{
+        flex: 0 1 45%;
+    }
+    header .header-list ul li{
+        padding-right: 5%;
+    }
+}
+@media (max-width: 350px)
+{
+    a, p{
+        font-size: .4em;
+    }
+    h1{
+        font-size: .7em;
+    }
+}
